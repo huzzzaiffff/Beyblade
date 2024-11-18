@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar
+{
+display: flex;
+align-items: center;
+position: absolute;
+top: 0%;
+}
+:root
+{
+--navbar-height:59px;
+}
+#navbar img
+{
+    height: 60px;
+    width: 80px;
+}
+#logo
+{
+    margin:10px 10px ;
+}
+#logo img
+{
+    margin: 10px 10px ;
+}
+#navbar ul
+{
+    display: flex;
+
+}
+#navbar ul li
+{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a
+{
+    color: aliceblue;
+    padding: 3px 77px;
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+}
+#navbar::before
+{
+    content:"";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar ul li a:hover
+{
+    color:black;
+    background-color: aliceblue;
+    
+}
+#navbar
+{
+    position: relative;
+    top: 0%;
+}
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    height: 314px;
+}
+#home::before
+{
+    content: "";
+    position: absolute;
+    background: url(maxresdefault.jpg) no-repeat center center/cover;
+    height: 71%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.h-primary
+{
+    font-size: 1.8rem;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home h1
+{
+    color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home p
+{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn
+{
+    padding: 3px 62px;
+    border: 2px solid rgb(8, 8, 16);
+    border-radius: 17px;
+    background-color: rgb(85, 85, 243);
+    margin: 45px;
+    font-size: 1rem;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: aliceblue;
+    color: black;
+}
+.h-secondary
+{
+    font-size:1rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px;
+}
+#services
+{
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    background-color: rgb(187 187 187);
+    border: 2px solid rgb(1 0 10);
+    border-radius: 20px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+    
+    
+}
+
+#services .box
+{
+border: 2px solid rgb(14, 13, 13);
+margin: 4px 7px;
+padding: 3px 6px;
+border-radius: 20px;
+background-color:rgb(85, 85, 243);
+color: aliceblue;
+
+}
+@keyframes huzz
+{
+    from
+    {
+        border-radius: 18px;
+    }
+    to
+    {
+        border-radius:0px;
+    }
+}
+#services .box img
+{
+height: 142px;
+width: 217px;
+display: block;
+margin: auto;
+}
+#clients-section
+{
+height: 344px;
+}
+
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item
+{
+    padding: 34px;
+}
+#client-section::before
+{
+    content: "";
+    position: absolute;
+    background: url('R\ \(3\).jpeg') no-repeat center center/cover;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+#contacts
+{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+#contacts::before
+{
+    content: "";
+    position: absolute;
+    background: url('8671284.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:  34px;;
+}
+#contact-box input,
+#contact-box textarea
+{
+width: 100%;
+padding: 0.5rem;
+}
+#contact-box form
+{
+    width: 40%;
+}
+#contact-box label
+{
+    font-size:1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+#contact-box textarea
+{
+width: 100%;
+padding: 0.5rem;
+border-radius: 10px;
+font-size:1.1rem;
+}
+.center
+{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+}
+footer
+{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+}
+.services-container h1
+{
+    padding: 0px; border: 2px solid rgb(14, 12, 12); margin-left: 200px;
+        margin-right: 200px;
+        background-color:rgb(85, 85, 243);
+        border-radius: 18px;
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        animation-name: huzz;
+        animation-duration: 2s;
+    animation-iteration-count: 15;
+}
+.services-container h1:hover
+{
+    background-color: aliceblue;
+    color: black;
+}
+#client-section h1
+{
+    padding: 0px; border: 2px solid rgb(16, 14, 14); margin-left: 200px;
+        margin-right: 200px;
+        background-color:rgb(85, 85, 243);
+        border-radius: 18px;
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        animation-name: huzz;
+        animation-duration: 2s;
+    animation-iteration-count: 15;
+} 
+#client-section h1:hover
+{
+    background-color: aliceblue;
+    color: black;
+}
+#contacts h1
+{
+    padding: 0px; border: 2px solid rgb(10, 7, 7); margin-left: 200px;
+        margin-right: 200px;
+        background-color:rgb(85, 85, 243);
+        border-radius: 11px;
+        color: aliceblue;
+        font-size: 1.5rem;
+        
+
+}
+#contacts h1:hover
+{
+    background-color:rgb(49, 47, 47);
+    color:aliceblue;
+}
+
+#services img
+{
+    border-radius: 30px;
+    border: 2px solid black;
+    
+    
+}
+#services img:hover
+{
+    border-radius: 60px;
+    cursor: pointer;
+    border: 2px solid aliceblue;
+}
+.client-item img
+{
+    border: 2px solid black;
+    border-radius: 400px;
+    height: 211px;
+}
+.client-item img:hover
+{
+    border: 2px solid aliceblue;
+    cursor: pointer;
+}
+#bbtn
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: aliceblue;
+    font-size: 1rem;
+}
+#bbtn:hover
+{
+    border: 2px solid aliceblue;
+    background-color:rgb(85, 85, 243);
+    color:aliceblue;
+    font-size: 1rem;
+}
